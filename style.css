@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container1 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+[data-input] {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+.container2 {
+    display: none;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2[data-word] {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px red;
+}
+
+.noun {
+    text-align: left;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.container3 {
+    margin-top: 20px;
+}
+
+
+.definitions {
+    
+    text-align: left;
+    margin-bottom: 15px;
+}
+.defin::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+.defin {
+    list-style: circle;
+    margin: 0;
+    padding: 5px;
+}
+
+.synonyms,
+.antonyms {
+    display: flex;
+    flex-wrap: wrap;
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+.syn, .anto {
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+
