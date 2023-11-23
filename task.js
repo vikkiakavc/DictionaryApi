@@ -5,6 +5,8 @@ const container2 = document.querySelector('.container2');
 const definitions = document.querySelector('.definitions')
 const synonyms = document.querySelector('.synonyms')
 const antonyms = document.querySelector('.antonyms')
+const url = `https://api.dictionaryapi.dev/api/v2/entries/en/`;
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -12,7 +14,7 @@ form.addEventListener('submit', e => {
     container1.style.display = 'none';
     const val = input.value;
     console.log(val);
-    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${val}`;
+    url = url + `${val}`;
     (async function doStuff() {
         const data = await fetch(url);
         console.log(data);
